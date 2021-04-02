@@ -11,8 +11,16 @@
     <div class="bodyAccueil">
       <h1 class="titreAccueil">Welcome!</h1>
       <img src="img/chick.svg" id="imgPoussin" />
-
-      <a href="game.html"><button class="startGame">Start Game</button></a>
+      <input
+        type="text"
+        id="inputName"
+        placeholder="Enter your name"
+        class="title-game"
+      />
+      <a href="game.html"
+        ><button class="startGame" onclick="saveName()">Start Game</button></a
+      >
     </div>
   </body>
+  <script src="index.js"></script>
 </html>

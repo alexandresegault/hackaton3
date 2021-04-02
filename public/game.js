@@ -106,7 +106,7 @@ function getMousePos(canvas, evt) {
   const rect = canvas.getBoundingClientRect();
   return {
     x: evt.clientX - rect.left,
-    y: evt.clientY - rect.top
+    y: evt.clientY - rect.top,
   };
 }
 
@@ -119,7 +119,7 @@ canvas.addEventListener(
     audioJet.play();
     audioMusic.play();
   },
-  false
+  false,
 );
 
 socket.on("colision", (x, y) => {
@@ -130,6 +130,7 @@ socket.on("colision", (x, y) => {
 
 socket.on("dead", () => {
   dead = true;
+  document.getElementById("retry").style.display = "block";
 });
 
 // function splash(xxx, yyy, text) {
