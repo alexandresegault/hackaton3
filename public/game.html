@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Battle of Fried Chicken</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page">
+      <h1 class="title-game noselect">( Battle of Fried Chicken )</h1>
+      <div>
+        <canvas
+          id="canvas"
+          width="940"
+          height="680"
+          style="background: url(./img/background.png) no-repeat center center"
+        >
+        </canvas>
+      </div>
+      <div style="display: none">
+        <img id="poulet" src="./img/chick.svg" />
+        <img id="fried-chicken" src="./img/fried-chicken.svg" />
+        <img id="chick-dead" src="./img/chick-dead.svg" />
+      </div>
+      <ul id="listPlayers" class="noselect"></ul>
+    </div>
+    <button class="noselect" id="mute" onclick="enableMute()">mute</button>
+    <a class="noselect" href="./index.html"
+      ><button id="retry">Retry</button></a
+    >
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/game.js"></script>
+    <script src="/chat.js"></script>
+  </body>
+</html>

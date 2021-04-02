@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+@font-face {
+  font-family: "Rio Grande";
+  src: url("./police/RioGrande.ttf");
+}
+
+body {
+  background: url("https://i.ibb.co/4SR88N8/Chick.jpg");
+  overflow: hidden;
+}
+
+#canvas {
+  width: 960px;
+  height: 680px;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+
+#mute {
+  padding: 5px;
+  position: absolute;
+  right: 20;
+  top: 30;
+}
+.noselect {
+  user-select: none;
+}
+#listPlayers {
+  list-style: none;
+  position: absolute;
+  top: 30%;
+  right: 20px;
+  border: 1px solid black;
+  background-color: white;
+  width: 150px;
+  height: 50vh;
+  overflow: scroll;
+  padding: 0;
+}
+
+#listPlayers li {
+  font-family: "Alice", serif;
+}
+
+.title-game,
+.titreAccueil {
+  font-family: "Rio Grande";
+  font-size: 50px;
+  color: #37111e;
+}
+#retry {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border: none;
+  background-color: rgba(179, 164, 29, 0.87);
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  color: black;
+  font-size: 150%;
+  text-decoration: none;
+  font-family: "Rio Grande";
+  cursor: pointer;
+}
+
+.divScore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background: white;
+  position: absolute;
+  right: 40;
+  top: 70;
+  border-radius: 3px;
+}
+#titreScore {
+  padding: 3px;
+}
+
+.bodyAccueil {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.startGame {
+  width: 300px;
+  height: 80px;
+  border-radius: 5px;
+  background: yellow;
+  outline: none;
+  font-size: 40px;
+  border: 1px solid orange;
+  color: orange;
+}
+#imgPoussin {
+  height: 50vh;
+  margin: 3vh;
+}
