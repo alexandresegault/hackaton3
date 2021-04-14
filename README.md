@@ -1,6 +1,6 @@
 ### A game jam using Socket.io, canvas and JavaScript
 
-You can [play the game here](https://)
+You can [play the game here](https://chickathon.herokuapp.com/)
 
 Battle of Fried Chicken (BFC) is a HTML5/Javascript/NodeJS/Socket.io game made in 24h for the second [R2DWild](https://portfolio-r2dwild.netlify.app/) Hackathon.
 
